@@ -50,21 +50,3 @@ export const determineRelationshipType = ({
         return 'many_to_one';
     return 'many_to_many';
 };
-
-export const determineCardinalities = (
-    relationshipType: RelationshipType
-): {
-    sourceCardinality: Cardinality;
-    targetCardinality: Cardinality;
-} => {
-    switch (relationshipType) {
-        case 'one_to_one':
-            return { sourceCardinality: 'one', targetCardinality: 'one' };
-        case 'one_to_many':
-            return { sourceCardinality: 'one', targetCardinality: 'many' };
-        case 'many_to_one':
-            return { sourceCardinality: 'many', targetCardinality: 'one' };
-        case 'many_to_many':
-            return { sourceCardinality: 'many', targetCardinality: 'many' };
-    }
-};
