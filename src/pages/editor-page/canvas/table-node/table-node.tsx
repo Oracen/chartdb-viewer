@@ -41,7 +41,6 @@ export type TableNodeType = Node<
 >;
 
 export const MAX_TABLE_SIZE = 450;
-export const MID_TABLE_SIZE = 337;
 export const MIN_TABLE_SIZE = 224;
 export const TABLE_MINIMIZED_FIELDS = 10;
 
